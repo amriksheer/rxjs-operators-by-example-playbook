@@ -10,6 +10,7 @@ const { reduce } = require("rxjs/operators");
 
 console.log("# sum of sequence");
 console.log("# like scan, but only emits the final value");
-of(1, 2, 3)
-  .pipe(reduce((acc, val) => acc + val, 0))
+
+of(2, 4, 6)
+  .pipe(reduce((a, c) => a + c, ))
   .subscribe(x => console.log(x));
